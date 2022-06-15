@@ -1,0 +1,42 @@
+CCFLAGS = -g ;
+HDRS = 	"d:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\word"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\excel"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl\\custsupp"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\cvirtsup"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\datasock"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\daqUtil"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\printing"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\toolbox"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\reportgen"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\localui"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\instr"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\include\\ansi"
+	"d:\\program files (x86)\\national instruments\\cvi2020\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"d:\\Program Files (x86)\\National Instruments\\CVI2020\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "Spring_Simulation.c" = "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring" ;
+Object "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\Spring_Simulation.obj" : "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\Spring_Simulation.c" ;
+FILENUM on "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\Spring_Simulation.obj" = 1 ;
+DEFPROTS on "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\Spring_Simulation.obj" = "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\Spring_Simulation.obj.cvidefprots" ;
+OUTFILE on "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\Spring_Simulation.obj" = "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\Spring_Simulation.obj.out" ;
+PrjObjects += "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\Spring_Simulation.obj" ;
+Object "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\resources.res" : "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\resources.in.rc" ;
+Depends "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\resources.res" : "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\manifest.xml" ;
+MainFromObjects "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\Spring_Simulation.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\Spring_Simulation.exe" : "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\link_options.txt" ;
+Depends "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\Spring_Simulation.exe" : "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\resources.res" ;
+Depends all : "d:\\Users\\Roy\\Documents\\Programing Projects\\Programing_Mechatronics\\Homework\\Assignment_10_Spring\\cvibuild.Spring_Simulation\\Debug\\Spring_Simulation.exe" ;
